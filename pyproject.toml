@@ -17,6 +17,7 @@ dependencies = [
 dev = [
     "beautifulsoup4>=4.14.3",
     "pytest>=9.0.1",
+    "types-requests>=2.32.4.20260107",
 ]
 
 [tool.ruff.format]

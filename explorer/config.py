@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import binascii
-import json
 import os
 from dataclasses import dataclass, field
 from functools import lru_cache
@@ -213,7 +211,7 @@ class S3Settings:
     S3_BUCKET_NAME: str = field(default_factory=get_env('S3_BUCKET_NAME', ''))
     """The bucket name."""
 
-    def get_client(self) -> any:
+    def get_client(self) -> Any:
         session = Session()
         s3_client = session.client(
             service_name='s3',

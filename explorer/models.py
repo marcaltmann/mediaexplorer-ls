@@ -126,10 +126,10 @@ class MediaFile(base.BigIntAuditBase):
         return f'{self.type.name}/{self.sub_type}'
 
     def is_video(self) -> bool:
-        return self.media_type.startswith('video/')
+        return self.type == MediaType.video
 
     def is_audio(self) -> bool:
-        return self.media_type.startswith('audio/')
+        return self.type == MediaType.audio
 
     def get_url(self) -> str:
         bucket_url = settings.s3.get_bucket_url()
