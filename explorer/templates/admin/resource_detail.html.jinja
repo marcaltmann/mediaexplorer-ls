@@ -39,7 +39,12 @@
       <dd>
         <ul>
           {% for cat in categories %}
-          <li><a href="{{ url_for('admin-category-detail', category_id=cat.id) }}">{{ cat.name }}</a></li>
+            <li>
+              <a
+                href="{{ url_for('admin-category-detail', category_id=cat.id) }}"
+                >{{ cat.name }}</a
+              >
+            </li>
           {% endfor %}
         </ul>
       </dd>

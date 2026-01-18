@@ -1,59 +1,60 @@
 .a-table {
-    border-collapse: collapse;
-    table-layout: fixed;
-    width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
 }
 
 .a-table thead {
-    background-color: var(--accent-color-dark);
-    color: var(--text-color-sidebar);
+  background-color: var(--accent-color-dark);
+  color: var(--text-color-sidebar);
 
-    a:any-link {
-        color: var(--text-color-sidebar);
-    }
+  a:any-link {
+    color: var(--text-color-sidebar);
+  }
 }
 
 .a-table {
-    th {
-        text-align: left;
+  th {
+    text-align: left;
+  }
+
+  th,
+  td {
+    padding: 0.25rlh 0.5rlh;
+  }
+
+  tbody {
+    font-size: 0.875rem;
+
+    tr:nth-child(odd) {
+      background-color: #eee;
     }
 
-    th, td {
-        padding: 0.25rlh 0.5rlh;
+    tr:nth-child(even) {
+      background-color: #ddd;
     }
+  }
 
-    tbody {
-        font-size: 0.875rem;
+  tr td:nth-child(1) {
+    width: 5%;
+  }
 
-        tr:nth-child(odd) {
-            background-color: #eee;
-        }
+  /* Name */
+  tr :nth-child(2) {
+    width: 30%;
+  }
 
-        tr:nth-child(even) {
-            background-color: #ddd;
-        }
-    }
+  tr :nth-child(3),
+  tr :nth-child(4),
+  tr :nth-child(6) {
+    width: 10%;
+  }
 
-    tr td:nth-child(1) {
-        width: 5%;
-    }
+  tr :nth-child(5) {
+    width: 20%;
+  }
 
-    /* Name */
-    tr :nth-child(2) {
-        width: 30%;
-    }
-
-    tr :nth-child(3),
-    tr :nth-child(4),
-    tr :nth-child(6) {
-        width: 10%;
-    }
-
-    tr :nth-child(5) {
-        width: 20%;
-    }
-
-    img {
-        vertical-align: bottom;
-    }
+  img {
+    vertical-align: bottom;
+  }
 }
