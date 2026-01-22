@@ -44,7 +44,13 @@
             <td>{% if resource.is_video() %}Video{% else %}Audio{% endif %}</td>
             <td>{{ resource.duration|duration_format }}</td>
             <td>{{ resource.created_at.strftime("%d/%m/%Y %H:%M") }}</td>
-            <td>{{ resource.is_published }}</td>
+            <td>
+              {% if resource.is_published %}
+                <span class="u-color-green" aria-label="true">&check;</span>
+              {% else %}
+                <span class="u-color-red" aria-label="false">&cross;</span>
+              {% endif %}
+            </td>
           </tr>
         {% endfor %}
       </tbody>

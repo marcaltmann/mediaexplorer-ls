@@ -21,5 +21,6 @@
   },
   "spa": null,
   "executor": "node",
-  "litestarVersion": "2.19.0"
+  "litestarVersion": "2.19.0",
+  "staticProps": null
 }

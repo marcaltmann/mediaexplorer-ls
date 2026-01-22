@@ -34,3 +34,14 @@
 .u-font-bold {
   font-weight: bold !important;
 }
+
+
+/* Font or text properties. */
+
+.u-color-green {
+  color: var(--green-color);
+}
+
+.u-color-red {
+  color: var(--red-color);
+}
